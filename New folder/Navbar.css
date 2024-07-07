@@ -1,0 +1,36 @@
+.navbar-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .navbar {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .navbar-content {
+    font-size: 24px;
+  }
+  
+  .navbar-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-link:hover {
+    color: white;
+  }
+  
+  .yellow-strip {
+    background-color: yellow;
+    height: 5px;
+    width: 100%;
+  }

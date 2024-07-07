@@ -1,0 +1,111 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Preview-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-top: 80px; /* Adjust for navbar height */
+    padding-bottom: 50px; /* Adjust for footer height */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.script-tabs {
+    display: flex;
+    justify-content: flex-start; /* Align tabs to the left */
+    margin-bottom: 10px;
+    width: 100%;
+    border-bottom: 2px solid #ddd;
+}
+
+.script-tab {
+    padding: 10px 15px;
+    font-size: 0.9em; /* Decrease the font size */
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.script-tab:hover {
+    background-color: #eee;
+}
+
+.script-tab.active {
+    border-bottom: 3px solid #007bff;
+    font-weight: bold;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    margin-bottom: 10px;
+    width: 100%; /* Ensure buttons container takes full width */
+}
+
+.action-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+.action-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.script-content {
+    width: 100%;
+    max-width: 1200px; /* Maximum width for the content */
+    height: calc(100% - 100px); /* Subtract the height of tabs, buttons and padding */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    overflow: auto;
+    margin: 0 auto; /* Center the content with equal margins */
+}
+
+.content-textarea {
+    width: 100%;
+    height: 100%; /* Full height of the content area */
+    padding: 10px;
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    resize: none;
+    overflow: auto;
+}
